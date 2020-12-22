@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="plTest"
+    errors="0" failures="0" hostname="" id="" package="plTest" skipped="0"
+    tests="2" time="41.22" timestamp="">
+  
+    <testcase name="Sign IN and open book" classname="plTest" time="40.29" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="open classes from toogle-menu" classname="plTest" time="0.9240" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

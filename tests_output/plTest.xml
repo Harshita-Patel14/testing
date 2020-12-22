@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="plTest"
+    errors="0" failures="0" hostname="" id="" package="plTest" skipped="2"
+    tests="0" time="0" timestamp="">
+  
+
+  
+    <system-err>
+        Error: An error occurred while retrieving a new session: &#34;session not created: This version of ChromeDriver only supports Chrome version 85&#34;
+       at endReadableNT (_stream_readable.js:1125:12)
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="Sign IN and open book" classname="plTest">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="open classes from toogle-menu" classname="plTest">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

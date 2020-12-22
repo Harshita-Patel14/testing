@@ -1,0 +1,19 @@
+{
+  "name": "nightwatch-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "test:vrt": "nightwatch -c nightwatch.vrt.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^87.0.0",
+    "nightwatch": "^1.4.1"
+  },
+  "dependencies": {
+    "nightwatch-vrt": "^0.2.10"
+  }
+}
