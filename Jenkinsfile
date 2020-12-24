@@ -1,16 +1,19 @@
 pipeline {
     agent any
-
     stages {
-        stage('One') {
+       stage('Install and Setup') {
+      parallel {
+        stage('NPM Install') {
+          steps {
+            sh 'npm i run-versions'
+            sh 'npm ci'
+          }
+        }
+      }
+    }
+        stage('Test Run') {
                  steps {
-                     echo 'Step One'
-                 }
-                 }
-
-        stage('Two') {
-                 steps {
-                     echo 'Step Two'
+                    sh 'npm run test:vrt'
                  }
                  }
     }
@@ -18,7 +21,7 @@ pipeline {
         always {
             mail to: 'harshitap@mitrmedia.com',
             subject: "Jenkins Build: ${currentBuild.fullDisplayName}",
-            body: "${currentBuild.result} Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}.\n More info at: ${env.BUILD_URL}"
+            body: "${currentBuild.result}Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
         }
     }
 }
