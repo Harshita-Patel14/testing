@@ -10,7 +10,10 @@ const baseNightwatchConfig={
     test_settings : {
       default : {
         desiredCapabilities: {
-          browserName: "chrome"
+          browserName: "chrome",
+           "chromeOptions": {
+                    'args': ['headless']
+                }
         }
       }
     }

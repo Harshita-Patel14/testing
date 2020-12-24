@@ -1,11 +1,11 @@
 pipeline {
     agent any
+    tools {nodejs "node"}
     stages {
        stage('Install and Setup') {
       parallel {
         stage('NPM Install') {
           steps {
-            sh 'npm i run-versions'
             sh 'npm ci'
           }
         }
